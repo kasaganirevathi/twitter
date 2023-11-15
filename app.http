@@ -1,0 +1,60 @@
+post http://localhost:3000/register/ 
+Content-Type: application/json 
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+###### 
+post http://localhost:3000/login/ 
+Content-Type: application/json 
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+####
+get http://localhost:3000/user/tweets/feed/
+Authorization:Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk5OTU5ODQxfQ.z_lamx6V7SrUBEtjpXXyVc9ksFxzmr7SgxmgVd9DXUk
+##### 
+GET http://localhost:3000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk5OTU5ODQxfQ.z_lamx6V7SrUBEtjpXXyVc9ksFxzmr7SgxmgVd9DXUk
+######3 
+
+GET http://localhost:3000/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk5OTU5ODQxfQ.z_lamx6V7SrUBEtjpXXyVc9ksFxzmr7SgxmgVd9DXUk
+
+######## 
+GET http://localhost:3000/tweets/7/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk5OTU5ODQxfQ.z_lamx6V7SrUBEtjpXXyVc9ksFxzmr7SgxmgVd9DXUk
+
+
+
+##### 
+GET http://localhost:3000/tweets/8/likes/ 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk5OTU5ODQxfQ.z_lamx6V7SrUBEtjpXXyVc9ksFxzmr7SgxmgVd9DXUk
+
+
+##### 
+GET http://localhost:3000/tweets/4/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk5OTU5ODQxfQ.z_lamx6V7SrUBEtjpXXyVc9ksFxzmr7SgxmgVd9DXUk
+
+###
+GET http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk5OTU5ODQxfQ.z_lamx6V7SrUBEtjpXXyVc9ksFxzmr7SgxmgVd9DXUk
+
+########
+post http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk5OTU5ODQxfQ.z_lamx6V7SrUBEtjpXXyVc9ksFxzmr7SgxmgVd9DXUk
+Content-Type: application/json 
+
+{
+   "tweet": "The Mornings..."
+}
+
+#### 
+DELETE http://localhost:3000/tweets/11/  
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk5OTYwOTA2fQ.ZTAsf8iJLhagxcU8_fofpuxnGUsb_Gq9-1H2kcv0enQ
